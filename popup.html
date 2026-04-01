@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=400, height=600">
+  <title>AI 둰ꢢ签页</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="greeting" id="greeting">你好</div>
+      <div class="date" id="date"></div>
+      <div class="weather" id="weather">加载天气...</div>
+    </header>
+    <div class="search-section">
+      <div class="search-box">
+        <input type="text" id="aiInput" placeholder="问AI任何问题..." autocomplete="off">
+        <button id="askBtn">提问</button>
+      </div>
+      <div class="ai-response" id="aiResponse" style="display:none;">
+        <div class="response-content" id="responseContent"></div>
+      </div>
+    </div>
+    <div class="shortcuts">
+      <h3>快捷工具</h3>
+      <div class="shortcut-grid">
+        <a href="https://www.google.com" target="_blank" class="shortcut-item"><span class="icon">🔍</span><span>搜索</span></a>
+        <a href="https://github.com" target="_blank" class="shortcut-item"><span class="icon">📦</span><span>GitHub</span></a>
+        <a href="https://chat.openai.com" target="_blank" class="shortcut-item"><span class="icon">🤖</span><span>ChatGPT</span></a>
+        <a href="https://translate.google.com" target="_blank" class="shortcut-item"><span class="icon">🌐</span><span>翻译</span></a>
+      </div>
+    </div>
+    <div class="news-section">
+      <h3>今日热闻</h3>
+      <div class="news-list" id="newsList"><div class="news-item">加载中...</div></div>
+    </div>
+    <div class="upgrade-banner" id="upgradeBanner">
+      <div class="banner-content">
+        <span>🚀 升级Pro解锁全部功能</span>
+        <a href="https://gumroad.com/" target="_blank">立即购买 $9/月</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <span>免费用户今日剩余：<b id="remaining">3</b> 次</span>
+      <a href="https://gumroad.com/" target="_blank">升级Pro</a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
