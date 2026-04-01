@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"AI New Tab","version":"1.0.0","description":"AI智能新标签页","permissions":["activeTab","storage"],"host_permissions":["*://*/*"],"action":{"default_popup":"popup.html","default_icon":{"128":"assets/icon.png"}},"background":{"service_worker":"background.js"},"web_accessible_resources":[{"resources":["assets/*"],"matches":["<all_urls>"]}]}
